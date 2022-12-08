@@ -1,0 +1,72 @@
+body {
+}
+
+* {
+  font-family: 'Inter', system-ui !important;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  max-width: 800px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+
+.block {
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 20px;
+    letter-spacing: 1.3px;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+}
+
+.currencies {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+
+  li {
+    display: inline-flex;
+    padding: 10px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    justify-content: center;
+    width: 25%;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &.active {
+      background-color: #16b67f;
+      color: #fff;
+    }
+
+    
+  }
+}
