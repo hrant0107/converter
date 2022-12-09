@@ -2,9 +2,8 @@ body {
 }
 
 * {
-  font-family: 'Inter', system-ui !important;
+  font-family: 'Inter';
   box-sizing: border-box;
-  user-select: none;
 }
 
 .App {
@@ -15,13 +14,11 @@ body {
   margin: 100px auto;
   background-color: #fff;
   padding: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
 }
 
-.block {
   input {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(194, 165, 112);
     font-size: 24px;
     font-weight: bold;
     padding: 20px 20px;
@@ -35,38 +32,37 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-}
+
 
 .currencies {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(194, 165, 112);
   border-radius: 5px;
   overflow: hidden;
-
+}
   li {
     display: inline-flex;
     padding: 10px 20px;
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgb(194, 165, 112);
     cursor: pointer;
     justify-content: center;
     width: 25%;
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.03);
+  }
+    li:hover {
+      background-color: rgb(194, 165, 112);
+      color: #fff;
     }
 
-    &:active {
-      background-color: rgba(0, 0, 0, 0.05);
-    }
+   
 
-    &.active {
-      background-color: #16b67f;
+    li.active {
+      background-color: rgb(233, 174, 66);
       color: #fff;
     }
 
     
-  }
-}
+  
+
